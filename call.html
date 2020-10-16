@@ -1,0 +1,106 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>Адаптивное меню, меню бургер на HTML CSS JS // Как это сделать?</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8">
+      <link rel="canonical" href="https://www.fonts-online.ru/font/Copperplate-Light">
+    <!-- Адаптив -->
+    <meta name="viewport" content="width=device-width">
+    <style type="text/css">
+    @font-face {
+    font-family: 'Copperplate-Light'; /* Гарнитура шрифта */
+      src: url('fonts/Copperplate-Light.eot');
+  src: url('fonts/Copperplate-Light.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Copperplate-Light.svg#Copperplate-Light') format('svg'),
+       url('fonts/Copperplate-Light.ttf') format('truetype'),
+       url('fonts/Copperplate-Light.woff') format('woff'),
+       url('fonts/Copperplate-Light.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;  
+   }
+      @font-face {
+    font-family: 'Avenir Next';
+    src: local('Avenir Next Regular'), local('Avenir-Next-Regular'),
+        url('fonts/AvenirNextCyr-Regular.woff2') format('woff2'),
+        url('fonts/AvenirNextCyr-Regular.woff') format('woff'),
+        url('fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  </style>
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <!-- Оболочка для демонстрации -->
+    <div class="wrapper">
+      <!-- Контент -->
+      <header class="header">
+        <div class='container'>
+          <div class="header__body">
+            <a href="#" class="header__logo">
+              <img src="img/logo.png" alt="">
+            </a>
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li>
+                  <a href="index.html" class="header__link">Гланая</a>
+                </li>
+                <li>
+                  <a href="rule.html" class="header__link">Правила</a>
+                </li>
+                <li>
+                  <a href="call.html" class="header__link active__1">Контакты</a>
+                </li>
+                <li>
+                  <a href="bot.html" class="header__link">Бот</a>
+                </li>
+                <li>
+                  <a class="btnflip" href="https://vk.com/away.php?to=https%3A%2F%2Fdiscordapp.com%2Fapi%2Foauth2%2Fauthorize%3Fclient_id%3D713373588861878343%26scope%3Dbot%26permissions%3D8&cc_key=">
+                    <span class="btnflip-item btnflip__front">Добавить</span>
+                    <span class="btnflip-item btnflip__center"></span>
+                    <span class="btnflip-item btnflip__back">Бота</span>
+                </a>
+              </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class='container'>
+      <div class="textcols">
+        <div class="textcols-row">
+          <div class="textcols-item">
+              <p>По всем вопросам:<a href="mailto:mafiabot_questions@mail.ru">mafiabot_questions@mail.ru</a><p>
+              <p>Наш менеджер:</p>
+              <p>Фролова Дарья: <a href="https://vk.com/frolovaad">Вконтакте</a></p>
+          </div>
+          <div class="textcols-item">
+              <p>Наши программисты:<p>
+              <p>Костанян Артур: <a href="https://vk.com/id217685976">Вконтакте</a></p>
+              <p>Конанов Сергей: <a href="https://vk.com/id439908355">Вконтакте</a></p>
+              <p>Шиндяпкин Илья: <a href="https://vk.com/ishindyapkin">Вконтакте</a></p>
+              <p>Наш личный халявщик:<p>
+              <p>Васильченко Максим: <a href="https://vk.com/foychik">Вконтакте</a></p>
+          </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    <!-- Подключаем jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!-- Подключаем файл JS скриптов -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
