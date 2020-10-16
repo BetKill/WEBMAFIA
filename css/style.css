@@ -320,7 +320,7 @@ width: 11px;
         width: 100%;    /* ширина */
     }
     .right-col{
-        padding-left: 0px; /* отступ слева */
+        padding-left: 10px; /* отступ слева */
     }
 }
 /* clearfix сбрасывает float*/
