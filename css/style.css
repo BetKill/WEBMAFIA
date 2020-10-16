@@ -97,12 +97,11 @@ html,body{
 }
 }
 .btnflip {
-	margin-left: 0px;
 	margin-bottom: -50%;
 	display: flex;
   position: static;
   right: 0;
-  transform: translate(-6%, -50%);
+  transform: translate(-50%, -50%);
   width: 125px;
   height: 60px;
   text-align: center;
