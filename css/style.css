@@ -11,7 +11,6 @@ html,body{
 }
 /*Стили для демонстрации*/
 .wrapper{
-	
 }
 
 
@@ -66,8 +65,6 @@ html,body{
 .header__menu {
 	margin-top: 0px;
 }
-
-
 .header__list {
 	display: flex;
 	position: relative;
@@ -96,7 +93,6 @@ html,body{
 	margin: 0px 0px 0px 0px;
 }
 }
-
 @media (max-width:770px){
 	body.lock{
 		overflow: hidden;
@@ -182,6 +178,7 @@ html,body{
 	}
 }
 .btnflip {
+	font-family: 'Copperplate-Light';
   position: absolute;
   top: 50%;
   left: -10%;
@@ -207,7 +204,7 @@ html,body{
   backface-visibility: hidden;
   border-radius: 30px;
   text-transform: uppercase;
-  color: #fff;
+  color: #1c1d22;
   transition: 1s;
 }
 .btnflip-item.btnflip__front {
@@ -217,13 +214,14 @@ html,body{
   transform: rotateX(-180deg) translateZ(20px);
 }
 .btnflip-item.btnflip__back {
+		color: #ffae58;
   transform: rotateX(180deg) translateZ(20px);
 }
 .btnflip:hover .btnflip-item.btnflip__back {
   transform: rotateX(0deg) translateZ(20px);
 }
 .btnflip-item.btnflip__center {
-  background: linear-gradient(to left, #c31a5b, #7129bd);
+  background: #ffae58;
 }
 .btnflip-item.btnflip__center::before {
   content: '';
@@ -232,7 +230,7 @@ html,body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #ffdd1f, #c31a5b);
+  background: #2A2F46;
   border-radius: 30px;
   transform: translateZ(-1px);
 }
@@ -281,13 +279,28 @@ html,body{
 }
 @media (max-width: 806px){
 	.btnflip{
-		left: -22px;
+		left: -43px;
 		width: 120px;
 		height: 30px;
 	}
 	.btnflip-item{
 		  line-height: 30px;
 		font-size: 20px;
+	}
+}
+@media (max-width: 804px){
+	.btnflip{
+		left: -43px;
+		width: 110px;
+		height: 30px;
+	}
+	.btnflip-item{
+		  line-height: 30px;
+		font-size: 18px;
+	}
+	.active__1{
+		font-size: 26px;
+		margin: 0px -20px 0px 0px;
 	}
 }
 @media (max-width:767px){
@@ -386,12 +399,12 @@ width: 11px;
 }
 .txt{
   color: #ffae58;
-  decoration: none;
+  text-decoration: none;
         }
 .txt1{
   color: #ffae58;
   text-align: center;
-  decoration: none;
+  text-decoration: none;
 }
 .text_back {
 	background:  rgb(44, 42, 50);
