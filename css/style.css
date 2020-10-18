@@ -182,12 +182,11 @@ html,body{
 	}
 }
 .btnflip {
-	margin-bottom: -50%;
-	display: flex;
-  position: static;
-  right: 0;
-  transform: translate(-6%, -50%);
-  width: 125px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translate(-50%, -50%);
+  width: 200px;
   height: 60px;
   text-align: center;
   transform-style: preserve-3d;
@@ -195,21 +194,20 @@ html,body{
   transform-origin: center center;
 }
 .btnflip-item {
-	font-family: 'Copperplate-Light';
-  position: fixed;
-  top: 25%;
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   text-align: center;
   line-height: 60px;
-  font-size: 20px;
+  font-size: 22px;
   background-color: rgba(255,255,255, .05);
   transform-style: preserve-3d;
   backface-visibility: hidden;
   border-radius: 30px;
   text-transform: uppercase;
-  color: #1c1d22;
+  color: #fff;
   transition: 1s;
 }
 .btnflip-item.btnflip__front {
@@ -225,26 +223,28 @@ html,body{
   transform: rotateX(0deg) translateZ(20px);
 }
 .btnflip-item.btnflip__center {
-  background: linear-gradient(to left, #CD5E26, #ffae58);
+  background: linear-gradient(to left, #c31a5b, #7129bd);
 }
 .btnflip-item.btnflip__center::before {
   content: '';
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #ffdd1f, #CD5E26);
+  background: linear-gradient(to left, #ffdd1f, #c31a5b);
   border-radius: 30px;
   transform: translateZ(-1px);
 }
 .btnflip:hover .btnflip-item.btnflip__center {
   transform: rotateX(-180deg);
-}	
+}
 .content {
 	padding: 100px 0px 0px 0px;
 }
 .content__text {
+	word-break: break-all;
+		overflow: hidden;
 	border-radius: 15px;
 	margin-bottom: 15px;
 	padding: 15px 15px 2px 15px;
@@ -257,7 +257,50 @@ html,body{
 .content__text p{
 	margin: 0px 0px 20px 0px;
 }
+@media (max-width: 1077px){
+	.btnflip{
+		left: -35px;
+		width: 160px;
+		height: 60px;
+	}
+	.btnflip-item{
+		  line-height: 60px;
+		font-size: 22px;
+	}
+}
+@media (max-width: 1000px){
+	.btnflip{
+		left: -45px;
+		width: 120px;
+		height: 30px;
+	}
+	.btnflip-item{
+		  line-height: 30px;
+		font-size: 20px;
+	}
+}
+@media (max-width: 806px){
+	.btnflip{
+		left: -22px;
+		width: 120px;
+		height: 30px;
+	}
+	.btnflip-item{
+		  line-height: 30px;
+		font-size: 20px;
+	}
+}
 @media (max-width:767px){
+	.btnflip{
+		top: 150%;
+		left: 50%;
+		width: 200px;
+		height: 60px;
+	}
+		.btnflip-item{
+		font-size: 24px;
+		line-height: 60px;
+	}
 	.content {
 		padding: 70px 0px 0px 0px;
 	}
@@ -287,6 +330,8 @@ width: 11px;
 .left-col, /* левая колонка */
 .right-col/* правая колонка */
 {
+		word-break: break-all;
+		overflow: hidden;
 		padding: 10px;
 		color: #ffae58;
 		font-family: 'Avenir Next';
